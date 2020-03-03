@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p process.env.PORT"
   },
+  "heroku-postbuild": "npm run build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emreihlamur/ptts.link.git"
